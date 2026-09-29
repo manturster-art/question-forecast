@@ -78,7 +78,7 @@
     if (_execFlag(rate, cfg)) {
       const last = s.expenditure.filter(e => e.year < s.now && e.budget > 0).slice(-1)[0];
       out.push({ kind: 'exec', id: 'EXEC-' + last.year, title: `${last.year}년 집행률 ${rate}%`, year: last.year,
-        evidence: `예산 ${last.budget}원 · 집행 ${last.spent}원` + (last.mended ? ' · 지방재정365 보충' : '') });
+        evidence: `${name} 예산 ${last.budget}원 · 집행 ${last.spent}원` + (last.mended ? ' · 지방재정365 보충' : '') });
     }
     return out;
   }

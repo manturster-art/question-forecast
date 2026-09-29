@@ -116,7 +116,7 @@ test('many checked promises are capped near LIMIT/3 so F lines keep at least 2/3
   const r = P.build('행감대비', { ...ctx(), summary: s, findingIds: allIds(s), promiseIds: inc });
   const data = r.text.split('[자료]')[1].split('[과제]')[0];
   const fPart = data.split('[P] ')[0];
-  const pPart = data.split('[P] ')[1].split('[B] ')[0];
+  const pPart = data.split('[P] ')[1].split('[B] 예산(')[0];
   assert.ok(data.length <= P.LIMIT + 200);
   // [F] 가 아닌 부분([P]·[B]·머리글)이 1/3 이하 → [F] 몫이 2/3 이상. 실제로 채운 [F] 는 줄 단위로
   // 잘리므로 한 줄(≤ 250자) 모자랄 수 있다.
@@ -235,4 +235,25 @@ test('답변서초안 template asks for one draft per picked item', () => {
   const t = T('답변서초안');
   assert.ok(t.includes('고른 항목마다'));
   assert.ok(t.includes('[F9] [P9] [B9]'));
+});
+
+
+test('finding body is cut at 200 chars, not 80', () => {
+  const body = '가'.repeat(150) + '나'.repeat(100);
+  const d = JSON.parse(JSON.stringify(DATA));
+  d.findings[0].body = body;
+  const ix = core.index(d, 2026);
+  const target = { kind: 'dept', name: '청년정책관' };
+  const summary = core.summarize(ix, target);
+  const r = P.build('행감대비', { target, summary, actions: {}, findingIds: summary.findings.map(f => f.id), promiseIds: new Set(), template: T('행감대비') });
+  assert.ok(r.text.includes('가'.repeat(150) + '나'.repeat(50) + '…'));
+  assert.ok(!r.text.includes('가'.repeat(150) + '나'.repeat(51)));
+});
+
+test('[B] heading names its scope: dept name or 실·국 합산', () => {
+  assert.match(P.build('행감대비', ctx()).text, /\[B\] 예산\(청년정책관\)\s/);
+  const target = { kind: 'silguk', name: '기획경제실' };
+  const summary = core.summarize(core.index(DATA, 2026), target);
+  const r = P.build('행감대비', { target, summary, actions: {}, findingIds: [], promiseIds: new Set(), template: T('행감대비') });
+  assert.match(r.text, /\[B\] 예산\(기획경제실 합산\)\s/);
 });

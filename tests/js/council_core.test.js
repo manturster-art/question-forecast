@@ -175,3 +175,11 @@ test('weather follows counts total (attachment raises it)', () => {
   assert.equal(after, before + 1);
   assert.equal(cc.weather(after, cfg).icon, after === 0 ? '맑음' : after === 1 ? '구름 조금' : '비');
 });
+
+test('exec candidate evidence names the dept', () => {
+  const ix = core.index(DATA, 2026);
+  const cs = cc.candidates(ix, '청년정책관', {}, { exec_low: 101, exec_high: 200 });
+  const e = cs.find(c => c.kind === 'exec');
+  assert.ok(e);
+  assert.match(e.evidence, /^청년정책관 예산 /);
+});

@@ -38,13 +38,14 @@
   }
 
   // --- 프롬프트 조립 ---
-  function trunc80(s) {
+  const BODY_MAX = 200;
+  function truncBody(s) {
     s = (s || '').trim();
-    return s.length > 80 ? s.slice(0, 80) + '…' : s;
+    return s.length > BODY_MAX ? s.slice(0, BODY_MAX) + '…' : s;
   }
 
   function findingLine(n, f, summary, actions) {
-    let line = `[F${n}] ${f.year} ${f.com}위원회 · ${f.dept} · 「${f.title}」 ${trunc80(f.body)}`;
+    let line = `[F${n}] ${f.year} ${f.com}위원회 · ${f.dept} · 「${f.title}」 ${truncBody(f.body)}`;
     if (f.recurring) {
       const rec = (summary.recurring || []).find(r => r.id === f.recurring);
       if (rec) line += ` · 되풀이 ${rec.id} (${rec.years.join('·')})`;
@@ -135,6 +136,8 @@
     let pList = (summary.promises.guessed || []).filter(p => promiseIds.has(p.id));
     const picked = { F: fCandidates.length, P: pList.length };
     const bList = closedExpenditures(summary);
+    const tg = ctx.target || {};
+    const bScope = tg.kind === 'silguk' ? `${tg.name || ''} 합산` : (tg.name || '');
 
     // 최종 검토 수정 4: 약속을 많이 체크하면 [P] 가 자료 칸을 차지해 [F] 가 밀려났다. [P] 는
     // 자료 칸의 약 1/3(P_CAP)까지만 싣고, 넘는 것은 끝에서부터 빼 「외 N건 생략」으로 적는다.
@@ -157,7 +160,7 @@
       const bLines = bList.map((e, i) => budgetLine(i + 1, e));
       return '[F] 행감 지적\n' + (fLines.length ? fLines.join('\n') : '(없음)') + '\n\n' +
         '[P] 답변 속 약속(추정 부서, 고른 것만)\n' + (pLines.length ? pLines.join('\n') : '(없음)') + '\n\n' +
-        '[B] 예산\n' + (bLines.length ? bLines.join('\n') : '(없음)');
+        `[B] 예산(${bScope})\n` + (bLines.length ? bLines.join('\n') : '(없음)');
     }
 
     let data = render(fCandidates);

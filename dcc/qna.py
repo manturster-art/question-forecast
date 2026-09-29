@@ -48,6 +48,7 @@ BULLET = re.compile(r'^[○◯❍•‣▸▶□◦∙⦁∘·ㆍ\-]')
 # 답변이면 글머리가 안 벗겨진 채 commitments 에 남았다. BULLET 과 같은 글자 집합을 쓴다.
 STRIP_BULLET = re.compile(r'^[○◯❍•‣▸▶□◦∙⦁∘·ㆍ\-]\s*')
 QUESTION_END = ('?', '？')
+SENT_END = ('.', '?', '!', '？', '。')
 _STOPW_BASE = set('관련하여 대한 계획은 현황과 위한 시의 노력은 어떻게 있는지 방안은 대책은 우리 '
             '추진 운영 계획 현황 사업'.split())
 # 최종 검토 뒤 고침(R5): 어느 부서에나 나오는 낱말. 질문 쪽에서도 사업명 쪽에서도,
@@ -89,8 +90,17 @@ def _asker_marker(row, cells):
 def parse_report(md, session, date, uid):
     out, topic, cur, in_question = [], '', None, False
     q_ord, _prev_asker = 0, None  # _prev_asker 는 표 하나 넘어갈 때까지만 살아 있다
+    buf = []  # 글머리 하나(줄바꿈으로 여러 <br> 줄에 걸친 문장)를 모으는 칸 — [질문 dict, 조각들]
+
+    def flush():
+        if buf:
+            body = ' '.join(buf[0][1])
+            if PROMISE.search(body):
+                buf[0][0]['commitments'].append(body)
+            buf.clear()
     for row in ROW.findall(md):
         in_question = False  # 표 한 줄이 바뀌면 이어붙이던 질문은 끝난 것으로 본다
+        flush()
         cells = CELL.findall(row)
         asker = _asker_marker(row, cells)
         if asker is not None:
@@ -107,11 +117,13 @@ def parse_report(md, session, date, uid):
                 continue
             m = TOPIC.match(s)
             if m and not QUESTION.match(s):
+                flush()
                 topic = m.group(2).strip()
                 in_question = False  # 새 주제로 넘어가면 이어붙이던 질문은 끝난 것으로 본다
                 continue
             q = QUESTION.match(s)
             if q:
+                flush()
                 qtext = q.group(3).strip()
                 cur = {"id": f'P{session}-{q_ord:02d}-{int(q.group(1)):02d}-{int(q.group(2)):02d}',
                        "session": session, "date": date, "topic": topic,
@@ -126,9 +138,14 @@ def parse_report(md, session, date, uid):
                 in_question = not cur['question'].endswith(QUESTION_END)
                 continue
             in_question = False
-            body = STRIP_BULLET.sub('', s)
-            if PROMISE.search(body):
-                cur['commitments'].append(body)
+            # 표 칸 안에서 문장이 줄바꿈으로 <br> 여러 줄에 걸쳐 있다: 글머리 없는 줄이 앞 줄의
+            # 문장 끝(. ? !)을 안 만났으면 그 문장의 이어짐이다(앞머리를 잃은 조각이 되지 않게).
+            if buf and buf[0][0] is cur and not BULLET.match(s) and not buf[0][1][-1].endswith(SENT_END):
+                buf[0][1].append(s)
+                continue
+            flush()
+            buf.append([cur, [STRIP_BULLET.sub('', s)]])
+        flush()
     return out
 
 

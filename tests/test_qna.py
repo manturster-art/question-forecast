@@ -118,3 +118,22 @@ def test_generic_words_are_not_dept_evidence():
     assert d == '장애인복지과' or d == '미상'
     rows = [{"year": 2025, "dept": "주택과", "project": "주택 관리 지원 사업"}]
     assert not ({'주택', '관리', '지원', '사업'} & qna.project_words(rows)['주택과'])
+
+
+# 표 칸 안에서 한 문장이 <br> 로 여러 줄에 걸치면 뒷줄은 앞 문장의 이어짐이다(허구 문장).
+WRAPPED_ANSWER_MD = chr(10).join([
+    '<table>',
+    '<tr><td>질문방식</td><td>일문일답</td><td>답변자</td><td>시 장</td></tr>',
+    '<tr><td colspan="4">1. 가나 체육시설</td></tr>',
+    '<tr><td colspan="4">1-1) 다라 사업의 추진 계획은?'
+    '<br>○ 지난해 착수하여 7월 중간보고회를 마쳤음.'
+    '<br>○ 하반기에는 중앙투자심사를<br>통해 최종 사업추진 근거를 확보할 계획임.'
+    '<br>○ 모든 시민<br>에게 안전한 공간을 제공할 예정임.</td></tr>',
+    '</table>', ''])
+
+
+def test_wrapped_promise_sentence_keeps_its_beginning():
+    ps = qna.parse_report(WRAPPED_ANSWER_MD, 305, '2025-09-11', 1)
+    assert ps[0]['commitments'] == [
+        '하반기에는 중앙투자심사를 통해 최종 사업추진 근거를 확보할 계획임.',
+        '모든 시민 에게 안전한 공간을 제공할 예정임.']
