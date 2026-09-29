@@ -1,0 +1,6 @@
+// deploy/wrangler.jsonc — 공개자료만 담은 HTML 한 장을 정적 자산으로 올린다(Cloudflare Workers 정적 자산, 선택).
+// 공개자료만 담으므로 문(Access·암호)을 걸지 않는다. 비공개 자료를 넣는다면 반드시 접근 제한을 따로 건다.
+// 올리기 전에 build_public.py 가 자체 시험판이 섞이지 않았는지, 누출 검사를 통과했는지 다시 본다.
+// "name" 은 자기 계정에 맞게 바꾼다.
+{ "name": "question-forecast", "compatibility_date": "2026-09-01",
+  "assets": { "directory": "./public", "not_found_handling": "single-page-application" } }

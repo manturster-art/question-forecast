@@ -1,0 +1,3 @@
+# 빌드된 번들·내장 자료는 한 바이트도 바뀌면 안 된다(VERSION 의 sha256 과 대조). 줄바꿈 변환을 끈다.
+vendor/kordoc/*.js -text
+site/js/selftest_fixture.js -text

@@ -1,0 +1,35 @@
+{
+  "_설명": "예시 값입니다. 「가나시」는 가상의 지자체이고 주소는 쓰이지 않는 example.invalid 입니다. 실제로 쓰려면 docs/표준화.md 를 따라 모두 바꿉니다.",
+  "지자체명": "가나시",
+  "약칭": "가나",
+  "의회명": "가나시의회",
+  "의회": {
+    "base": "https://council.example.invalid",
+    "행감목록": "/kr/inspectionCnts.do",
+    "답변요지서목록": "/kr/qnaBBS.do",
+    "뷰어": "/viewer/pdf.do?group=bbs&uid={uid}",
+    "파일조회": "/viewer/minutes/pdf/loadFile.do",
+    "의원현직": "/kr/member/district.do",
+    "의원역대": "/kr/member/chronicle.do"
+  },
+  "세출": {
+    "시누리집": "https://city.example.invalid/budgetInfoExcel.do?searchYear={year}",
+    "보충": "지방재정365"
+  },
+  "시장소개": "https://city.example.invalid/mayor",
+  "구": {
+    "가람": [
+      "가나",
+      "새솔",
+      "은별",
+      "다온"
+    ],
+    "나래": [
+      "하람",
+      "마루",
+      "은하수",
+      "아름",
+      "초롱"
+    ]
+  }
+}

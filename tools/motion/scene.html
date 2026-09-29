@@ -1,0 +1,155 @@
+<!doctype html>
+<!-- 역할: 「질문 예보」 30초 모션그래픽 장면 틀. tools/motion/make_motion.py 가 글꼴·자료·scene.js 를 채워
+     work/motion/scene.html 로 굽는다. 네트워크를 쓰지 않는다. window.seek(t) 가 t초 장면을 그린다. -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>질문 예보 모션그래픽</title>
+<style>
+/*__FONTS__*/
+:root {
+  --bg: #0a0a0a; --ink: #ededed; --body: #a1a1a1; --faint: #6f6f6f; --line: #262626;
+  --find: #6ea8ff; --rec: #ff7d9c; --prom: #bb9bff; --exec: #3fd0b6; --ok: #5bd07f;
+  --kr: "KR", "Pretendard Variable", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --num: "Geist", "KR", sans-serif;
+  --mono: "Geist Mono", "KR", monospace;
+  /* 앱 창 안쪽은 도구의 밝은 테마 색 그대로 */
+  --l-bg: #fafafa; --l-card: #ffffff; --l-line: #ebebeb; --l-ink: #171717; --l-body: #4d4d4d; --l-faint: #8f8f8f;
+  --l-find: #1b5fc9; --l-rec: #be1e4b; --l-rec-soft: #fdecf1; --l-rec-line: #f2b8c7; --l-prom: #7431c9; --l-exec: #0b7568;
+  --l-ok: #177a36;
+}
+html, body { margin: 0; background: var(--bg); overflow: hidden; }
+#stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: var(--kr); color: var(--ink);
+  -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; font-kerning: normal; }
+canvas { position: absolute; left: 0; top: 0; }
+#grain { mix-blend-mode: overlay; pointer-events: none; }
+.a { position: absolute; left: 0; top: 0; white-space: nowrap; transform-origin: 50% 50%; }
+.num { font-family: var(--num); font-feature-settings: "tnum" 1; letter-spacing: -0.03em; }
+.mono { font-family: var(--mono); letter-spacing: 0.02em; }
+
+/* 0~3초 */
+.cal { width: 380px; height: 440px; border-radius: 30px; background: #121214; border: 1px solid #2c2c31;
+  box-shadow: 0 40px 90px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.05); overflow: hidden; }
+.cal .band { position: absolute; left: 0; right: 0; top: 0; height: 96px; background: linear-gradient(180deg, #d0325f, #a8183f);
+  display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 30px; letter-spacing: 0.02em; color: #fff; }
+.cal .ring { position: absolute; top: -14px; width: 16px; height: 40px; border-radius: 8px; background: #2a2a2e; border: 3px solid #0a0a0a; }
+.cal .lab { position: absolute; left: 0; right: 0; top: 136px; text-align: center; font-size: 40px; font-weight: 700; color: var(--body); }
+.cal .flip { position: absolute; left: 0; right: 0; top: 196px; height: 200px; perspective: 900px; }
+.cal .flip div { position: absolute; left: 0; right: 0; top: 0; text-align: center; font-size: 168px; line-height: 200px; font-weight: 700;
+  backface-visibility: hidden; transform-origin: 50% 50%; }
+.cal .fold { position: absolute; left: 28px; right: 28px; top: 296px; height: 2px; background: rgba(0,0,0,.55); }
+.kick { font-size: 44px; font-weight: 700; }
+.kick-sub { font-size: 26px; color: var(--body); }
+.bar { width: 580px; height: 12px; border-radius: 6px; background: #1f1f23; overflow: hidden; }
+.bar i { display: block; height: 100%; width: 100%; border-radius: 6px; transform-origin: 0 50%;
+  background: linear-gradient(90deg, #7a1d3a, #ff7d9c); box-shadow: 0 0 18px rgba(255,125,156,.6); }
+.big-val { font-size: 170px; font-weight: 800; color: var(--rec); line-height: 1; }
+.big-val .u { font-family: var(--kr); font-size: 110px; font-weight: 800; margin-left: 6px; letter-spacing: -0.02em; }
+
+/* 3~7초 말풍선 */
+.bub { padding: 26px 44px 30px; border-radius: 48px; font-size: 56px; font-weight: 700; letter-spacing: -0.02em;
+  background: rgba(22,22,26,.92); border: 2px solid; box-shadow: 0 30px 70px rgba(0,0,0,.55); }
+.bub::after { content: ""; position: absolute; left: 70px; bottom: -15px; width: 26px; height: 26px; background: inherit;
+  border-right: 2px solid; border-bottom: 2px solid; border-color: inherit; transform: rotate(45deg); border-bottom-right-radius: 6px; }
+.bub.r::after { left: auto; right: 70px; }
+.bub.sm { font-size: 30px; padding: 14px 26px 16px; border-radius: 28px; border-width: 1.5px; color: #bdbdbd; }
+.bub.sm::after { left: 36px; bottom: -9px; width: 16px; height: 16px; border-width: 1.5px; }
+
+/* 7~11초 로고 */
+.logo { display: flex; font-size: 136px; font-weight: 800; letter-spacing: -0.035em; }
+.logo span { display: inline-block; }
+.logo .sp { width: 0.28em; }
+.tag { font-size: 44px; font-weight: 500; color: #d4d4d4; letter-spacing: -0.01em; display: flex; gap: 0.28em; }
+.tag span { display: inline-block; }
+.mark-lab { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+
+/* 11~17초 자료 */
+.h2 { font-size: 56px; font-weight: 700; letter-spacing: -0.025em; }
+.h2-sub { font-size: 26px; color: var(--body); }
+.col-lab { font-size: 30px; font-weight: 700; color: #d9d9d9; }
+.col-num { font-size: 78px; font-weight: 700; line-height: 1; }
+.col-num .u { font-family: var(--kr); font-size: 32px; font-weight: 600; color: var(--body); margin-left: 6px; letter-spacing: 0; }
+.col-sub { font-size: 22px; color: var(--faint); }
+
+/* 17~24초 앱 창(도구의 밝은 테마) */
+.win { width: 1440px; height: 840px; border-radius: 22px; background: var(--l-bg); color: var(--l-ink); overflow: hidden;
+  box-shadow: 0 60px 140px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.08); }
+.win .chrome { position: absolute; left: 0; right: 0; top: 0; height: 46px; background: #ededed; border-bottom: 1px solid #dedede; }
+.win .chrome b { position: absolute; top: 17px; width: 13px; height: 13px; border-radius: 50%; }
+.win .chrome .fn { position: absolute; left: 0; right: 0; top: 11px; text-align: center; font-size: 17px; color: #6b6b6b; }
+.w-hd { position: absolute; left: 0; right: 0; top: 46px; height: 88px; background: #fff; border-bottom: 1px solid var(--l-line); }
+.w-brand { position: absolute; left: 36px; top: 16px; font-size: 30px; font-weight: 800; letter-spacing: -0.02em; }
+.w-brand small { display: block; font-size: 17px; font-weight: 500; color: var(--l-faint); letter-spacing: 0; margin-top: 2px; }
+.w-search { position: absolute; left: 820px; top: 18px; width: 580px; height: 52px; border-radius: 12px; border: 1.5px solid #d9d9d9; background: #fff; }
+.w-search .ic { position: absolute; left: 18px; top: 14px; width: 16px; height: 16px; border: 2.5px solid #8f8f8f; border-radius: 50%; }
+.w-search .ic::after { content: ""; position: absolute; right: -8px; bottom: -7px; width: 8px; height: 2.5px; background: #8f8f8f; transform: rotate(45deg); }
+.w-search .q { position: absolute; left: 54px; top: 10px; font-size: 24px; color: var(--l-ink); font-weight: 500; }
+.w-search .ph { position: absolute; left: 54px; top: 12px; font-size: 22px; color: #a3a3a3; }
+.w-search .caret { position: absolute; top: 12px; width: 2px; height: 28px; background: var(--l-find); }
+.w-drop { position: absolute; left: 820px; top: 124px; width: 580px; border-radius: 12px; background: #fff; border: 1px solid #e3e3e3;
+  box-shadow: 0 18px 40px rgba(0,0,0,.14); padding: 8px; box-sizing: border-box; }
+.w-drop .row { height: 56px; border-radius: 8px; background: #f0f5fe; display: flex; align-items: center; padding: 0 18px; gap: 14px; font-size: 24px; font-weight: 700; }
+.w-drop .row span { font-size: 19px; font-weight: 500; color: var(--l-faint); }
+.w-eyebrow { font-size: 16px; color: var(--l-faint); letter-spacing: 0.08em; }
+.w-title { font-size: 50px; font-weight: 800; letter-spacing: -0.02em; }
+.w-sub { font-size: 21px; color: var(--l-body); }
+.card { width: 322px; height: 168px; border-radius: 16px; background: #fff; border: 1px solid var(--l-line); border-left: 5px solid; box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0,0,0,.03); }
+.card .t { position: absolute; left: 24px; top: 20px; font-size: 20px; font-weight: 600; color: var(--l-body); }
+.card .v { position: absolute; left: 22px; top: 54px; font-size: 64px; font-weight: 700; line-height: 1; }
+.card .v .u { font-family: var(--kr); font-size: 22px; font-weight: 600; color: var(--l-body); margin-left: 4px; letter-spacing: 0; }
+.card .c { position: absolute; left: 24px; top: 128px; font-size: 17px; color: var(--l-faint); }
+.panel { border-radius: 16px; background: #fff; border: 1px solid var(--l-line); box-sizing: border-box; }
+.p-eyebrow { font-size: 15px; letter-spacing: 0.08em; }
+.p-title { font-size: 28px; font-weight: 800; letter-spacing: -0.02em; }
+.chip { font-size: 28px; padding: 6px 14px; border-radius: 8px; border: 1.5px solid var(--l-rec-line); background: var(--l-rec-soft); color: var(--l-rec); font-weight: 600; }
+.chip.sm { font-size: 19px; padding: 3px 9px; border-radius: 6px; }
+.arrow { height: 3px; background: var(--l-rec); transform-origin: 0 50%; border-radius: 2px; }
+.arrow::after { content: ""; position: absolute; right: -2px; top: -5px; border-left: 10px solid var(--l-rec); border-top: 6.5px solid transparent; border-bottom: 6.5px solid transparent; }
+.arrow.sm { height: 2px; }
+.arrow.sm::after { top: -4px; border-left-width: 7px; border-top-width: 5px; border-bottom-width: 5px; }
+.r-title { font-size: 24px; font-weight: 600; color: var(--l-ink); }
+.r-title.sm { font-size: 19px; font-weight: 500; color: var(--l-body); }
+.seg { display: flex; gap: 8px; }
+.seg span { font-size: 18px; padding: 8px 14px; border-radius: 999px; border: 1px solid #dcdcdc; color: var(--l-body); }
+.seg span.on { background: var(--l-ink); color: #fff; border-color: var(--l-ink); }
+.pv { border-radius: 12px; background: #f6f6f6; border: 1px solid #ececec; }
+.pv i { position: absolute; left: 22px; height: 11px; border-radius: 6px; background: #dedede; }
+.btn { width: 440px; height: 62px; border-radius: 12px; background: var(--l-ink); color: #fff; font-size: 24px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; gap: 12px; }
+.btn .ck { width: 26px; height: 26px; border-radius: 50%; background: #fff; color: var(--l-ok); font-size: 18px; line-height: 26px; text-align: center; font-weight: 900; }
+.cursor { width: 34px; height: 40px; filter: drop-shadow(0 3px 5px rgba(0,0,0,.45)); }
+.ripple { width: 60px; height: 60px; border-radius: 50%; border: 3px solid var(--l-find); box-sizing: border-box; }
+.fly { width: 150px; height: 190px; border-radius: 14px; background: #fff; box-shadow: 0 20px 40px rgba(0,0,0,.45); }
+.fly b { position: absolute; left: 18px; top: 16px; font-size: 17px; color: var(--l-ink); font-weight: 800; }
+.fly i { position: absolute; left: 18px; height: 8px; border-radius: 4px; background: #d9d9d9; }
+.ai { width: 150px; height: 150px; border-radius: 42px; background: linear-gradient(145deg, #2b5fd9, #7431c9 60%, #0b7568);
+  box-shadow: 0 30px 70px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.25); }
+.ai svg { position: absolute; left: 35px; top: 35px; }
+.ai-lab { font-size: 30px; font-weight: 700; }
+.pulse { width: 150px; height: 150px; border-radius: 46px; border: 3px solid var(--find); box-sizing: border-box; }
+
+/* 24~27초 결과 */
+.res-eb { font-size: 32px; font-weight: 600; color: var(--body); }
+.shard { font-size: 240px; font-weight: 800; color: var(--rec); line-height: 1; width: 900px; height: 300px; display: flex; align-items: center; justify-content: center; }
+.shard .u { font-family: var(--kr); font-size: 150px; margin-left: 8px; letter-spacing: -0.02em; }
+.after { font-size: 240px; font-weight: 800; line-height: 1; color: var(--ink); }
+.after .pre { font-family: var(--kr); font-size: 110px; font-weight: 700; color: var(--body); margin-right: 26px; letter-spacing: -0.02em; }
+.after .u { font-family: var(--kr); font-size: 150px; margin-left: 8px; letter-spacing: -0.02em; color: var(--exec); }
+.after .n { color: var(--exec); }
+.pill { font-size: 22px; padding: 8px 18px; border-radius: 999px; border: 1px solid #3a3a3a; color: #bdbdbd; }
+.stamp { font-size: 40px; font-weight: 700; display: flex; align-items: center; gap: 18px; letter-spacing: -0.015em; }
+.stamp .ck { width: 46px; height: 46px; border-radius: 50%; background: rgba(91,208,127,.14); border: 2px solid var(--ok); box-sizing: border-box; position: relative; }
+.stamp .ck::after { content: ""; position: absolute; left: 13px; top: 7px; width: 11px; height: 20px; border-right: 4px solid var(--ok); border-bottom: 4px solid var(--ok); transform: rotate(45deg); }
+
+/* 27~30초 */
+/* 제작자 표기: #8f8f8f 는 배경 #09090b 위 대비 약 6.3:1 */
+.credit { font-family: var(--mono); font-size: 22px; font-weight: 400; color: #8f8f8f; letter-spacing: 0.12em; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>window.MOTION = /*__DATA__*/null;</script>
+<script>/*__SCENE__*/</script>
+</body>
+</html>

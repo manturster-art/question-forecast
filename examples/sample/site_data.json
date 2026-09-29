@@ -1,0 +1,2099 @@
+{
+ "generated": "2026-09-01",
+ "sources": [
+  {
+   "kind": "결과보고서",
+   "year": 2021,
+   "com": "도시건설",
+   "uid": 29210,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29210",
+   "declared": 2,
+   "parsed": 2
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2021,
+   "com": "보사환경",
+   "uid": 29211,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29211",
+   "declared": 1,
+   "parsed": 1
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2021,
+   "com": "총무경제",
+   "uid": 29212,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29212",
+   "declared": 1,
+   "parsed": 1
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2022,
+   "com": "도시건설",
+   "uid": 29222,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29222",
+   "declared": 1,
+   "parsed": 1
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2022,
+   "com": "보사환경",
+   "uid": 29221,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29221",
+   "declared": 2,
+   "parsed": 2
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2022,
+   "com": "총무경제",
+   "uid": 29220,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29220",
+   "declared": 2,
+   "parsed": 2
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2023,
+   "com": "도시건설",
+   "uid": 29230,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29230",
+   "declared": 3,
+   "parsed": 3
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2023,
+   "com": "보사환경",
+   "uid": 29232,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29232",
+   "declared": 2,
+   "parsed": 2
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2023,
+   "com": "총무경제",
+   "uid": 29231,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29231",
+   "declared": 2,
+   "parsed": 2
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2024,
+   "com": "기획행정",
+   "uid": 29241,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29241",
+   "declared": 3,
+   "parsed": 3
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2024,
+   "com": "도시교통",
+   "uid": 29240,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29240",
+   "declared": 3,
+   "parsed": 3
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2024,
+   "com": "복지환경",
+   "uid": 29242,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29242",
+   "declared": 3,
+   "parsed": 3
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2025,
+   "com": "기획행정",
+   "uid": 29251,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29251",
+   "declared": 3,
+   "parsed": 3
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2025,
+   "com": "도시교통",
+   "uid": 29250,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29250",
+   "declared": 2,
+   "parsed": 2
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2025,
+   "com": "복지환경",
+   "uid": 29252,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29252",
+   "declared": 2,
+   "parsed": 2
+  },
+  {
+   "kind": "결과보고서",
+   "year": 2025,
+   "com": "의회운영",
+   "uid": 29253,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=29253",
+   "declared": 1,
+   "parsed": 1
+  },
+  {
+   "kind": "답변요지서",
+   "session": 291,
+   "date": "2024-03-12",
+   "uid": 10191,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=10191"
+  },
+  {
+   "kind": "답변요지서",
+   "session": 295,
+   "date": "2025-03-11",
+   "uid": 10195,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=10195"
+  },
+  {
+   "kind": "답변요지서",
+   "session": 299,
+   "date": "2026-03-10",
+   "uid": 10199,
+   "url": "https://council.example.invalid/viewer/pdf.do?group=bbs&uid=10199"
+  }
+ ],
+ "findings": [
+  {
+   "year": 2024,
+   "com": "도시교통",
+   "group": "가나도시공사",
+   "no": 3,
+   "title": "공영주차장 요금 체계 개선",
+   "body": "공영주차장 요금 체계를 주변 민간 주차장과 견주어 다시 짜기 바람.",
+   "dept_raw": "가나도시공사",
+   "uid": 29240,
+   "id": "F2024-도시교통-003",
+   "dept": "가나도시공사",
+   "silguk": "출자출연기관",
+   "recurring": null
+  },
+  {
+   "year": 2022,
+   "com": "도시건설",
+   "group": "가나도시공사",
+   "no": 1,
+   "title": "공영주차장 위탁 운영 점검",
+   "body": "공영주차장 위탁 운영 수입이 줄었으므로 운영 실태를 점검하기 바람.",
+   "dept_raw": "도시공사",
+   "uid": 29222,
+   "id": "F2022-도시건설-001",
+   "dept": "가나도시공사",
+   "silguk": "출자출연기관",
+   "recurring": null
+  },
+  {
+   "year": 2025,
+   "com": "도시교통",
+   "group": "가람구 및 4개동",
+   "no": 2,
+   "title": "도로 굴착 복구 사후 점검",
+   "body": "굴착 복구 뒤 침하가 되풀이되므로 사후 점검을 하기 바람.",
+   "dept_raw": "건설과",
+   "uid": 29250,
+   "id": "F2025-도시교통-002",
+   "dept": "가람구 건설과",
+   "silguk": "가람구",
+   "recurring": "R002"
+  },
+  {
+   "year": 2023,
+   "com": "도시건설",
+   "group": "가람구 및 4개동",
+   "no": 3,
+   "title": "도로 굴착 복구 관리 철저",
+   "body": "도로 굴착 뒤 복구가 늦어 민원이 잦으므로 복구 관리를 철저히 하기 바람.",
+   "dept_raw": "건설과",
+   "uid": 29230,
+   "id": "F2023-도시건설-003",
+   "dept": "가람구 건설과",
+   "silguk": "가람구",
+   "recurring": "R002"
+  },
+  {
+   "year": 2023,
+   "com": "보사환경",
+   "group": "보건소",
+   "no": 2,
+   "title": "금연구역 단속 실효성 제고",
+   "body": "금연구역 단속이 형식에 그치지 않도록 단속 시간대를 바꾸기 바람.",
+   "dept_raw": "양보건소 건강증진과",
+   "uid": 29232,
+   "id": "F2023-보사환경-002",
+   "dept": "건강증진과",
+   "silguk": "가람구보건소·나래구보건소",
+   "depts": [
+    "가람구보건소 건강증진과",
+    "나래구보건소 건강증진과"
+   ],
+   "recurring": null
+  },
+  {
+   "year": 2024,
+   "com": "도시교통",
+   "group": "환경국",
+   "no": 2,
+   "title": "어린이공원 놀이시설 안전 점검",
+   "body": "어린이공원 놀이시설 안전 점검 결과를 공개하고 보수를 서두르기 바람.",
+   "dept_raw": "공원관리과",
+   "uid": 29240,
+   "id": "F2024-도시교통-002",
+   "dept": "공원관리과",
+   "silguk": "환경국",
+   "recurring": null
+  },
+  {
+   "year": 2024,
+   "com": "복지환경",
+   "group": "나래구 및 7개동",
+   "no": 3,
+   "title": "경로당 냉난방비 지원 점검",
+   "body": "경로당 냉난방비 지원이 실제 사용과 맞는지 점검하기 바람.",
+   "dept_raw": "복지문화과",
+   "uid": 29242,
+   "id": "F2024-복지환경-003",
+   "dept": "나래구 복지문화과",
+   "silguk": "나래구",
+   "recurring": null
+  },
+  {
+   "year": 2024,
+   "com": "복지환경",
+   "group": "복지문화국",
+   "no": 1,
+   "title": "노인 일자리 참여자 안전 교육",
+   "body": "노인 일자리 참여자 안전 교육을 현장에 맞게 바꾸기 바람.",
+   "dept_raw": "노인복지과",
+   "uid": 29242,
+   "id": "F2024-복지환경-001",
+   "dept": "노인복지과",
+   "silguk": "복지문화국",
+   "recurring": null
+  },
+  {
+   "year": 2021,
+   "com": "보사환경",
+   "group": "복지문화국",
+   "no": 1,
+   "title": "경로당 운영비 정산 철저",
+   "body": "경로당 운영비 정산 서류가 빠진 곳이 있으므로 정산을 철저히 하기 바람.",
+   "dept_raw": "노인복지과",
+   "uid": 29211,
+   "id": "F2021-보사환경-001",
+   "dept": "노인복지과",
+   "silguk": "복지문화국",
+   "recurring": null
+  },
+  {
+   "year": 2022,
+   "com": "보사환경",
+   "group": "양 구청 및 11개 동 행정복지센터",
+   "no": 2,
+   "title": "민원 창구 대기시간 단축",
+   "body": "행정복지센터 민원 창구 대기시간이 길므로 창구 운영을 바꾸기 바람.",
+   "dept_raw": "동 행정복지센터",
+   "uid": 29221,
+   "id": "F2022-보사환경-002",
+   "dept": "동행정복지센터",
+   "silguk": "가람구·나래구",
+   "depts": [
+    "가람구 동행정복지센터",
+    "나래구 동행정복지센터"
+   ],
+   "recurring": null
+  },
+  {
+   "year": 2024,
+   "com": "복지환경",
+   "group": "복지문화국",
+   "no": 2,
+   "title": "지역 축제 예산 정산 철저",
+   "body": "지역 축제 예산 정산이 늦어지므로 정산 기한을 지키기 바람.",
+   "dept_raw": "문화관광과",
+   "uid": 29242,
+   "id": "F2024-복지환경-002",
+   "dept": "문화관광과",
+   "silguk": "복지문화국",
+   "recurring": null
+  },
+  {
+   "year": 2025,
+   "com": "복지환경",
+   "group": "복지문화국",
+   "no": 2,
+   "title": "긴급복지 지원 사후 관리",
+   "body": "긴급복지 지원을 받은 가구가 다시 위기에 놓이지 않도록 사후 관리를 하기 바람.",
+   "dept_raw": "복지정책과",
+   "uid": 29252,
+   "id": "F2025-복지환경-002",
+   "dept": "복지정책과",
+   "silguk": "복지문화국",
+   "recurring": null
+  },
+  {
+   "year": 2024,
+   "com": "기획행정",
+   "group": "기획경제실",
+   "no": 2,
+   "title": "지방세 체납액 징수 강화",
+   "body": "고액·상습 체납자 관리를 강화하고 분할 납부 제도를 적극 안내하기 바람.",
+   "dept_raw": "세정과",
+   "uid": 29241,
+   "id": "F2024-기획행정-002",
+   "dept": "세정과",
+   "silguk": "기획경제실",
+   "recurring": null
+  },
+  {
+   "year": 2025,
+   "com": "기획행정",
+   "group": "기획경제실",
+   "no": 3,
+   "title": "실·국 공통 성과지표 정비",
+   "body": "실·국 사업의 성과지표가 산출 위주이므로 결과 지표로 정비하기 바람.",
+   "dept_raw": "공통",
+   "uid": 29251,
+   "id": "F2025-기획행정-003",
+   "dept": "여러 부서 공통",
+   "silguk": "기타",
+   "recurring": null
+  },
+  {
+   "year": 2021,
+   "com": "총무경제",
+   "group": "",
+   "no": 1,
+   "title": "행정사무감사 자료 제출 철저",
+   "body": "감사 자료를 기한 안에 빠짐없이 제출하기 바람.",
+   "dept_raw": "전 부서",
+   "uid": 29212,
+   "id": "F2021-총무경제-001",
+   "dept": "여러 부서 공통",
+   "silguk": "기타",
+   "recurring": null
+  },
+  {
+   "year": 2025,
+   "com": "기획행정",
+   "group": "기획경제실",
+   "no": 2,
+   "title": "소송 수행 관리 철저",
+   "body": "패소가 늘고 있으므로 소송 대리인 관리와 사전 법률 검토를 강화하기 바람.",
+   "dept_raw": "예산법무과",
+   "uid": 29251,
+   "id": "F2025-기획행정-002",
+   "dept": "예산법무과",
+   "silguk": "기획경제실",
+   "recurring": null
+  },
+  {
+   "year": 2023,
+   "com": "총무경제",
+   "group": "기획경제실",
+   "no": 1,
+   "title": "예산 불용액 최소화",
+   "body": "해마다 같은 사업에서 불용액이 되풀이되므로 편성 단계에서 집행 가능성을 따져 보기 바람.",
+   "dept_raw": "예산법무과",
+   "uid": 29231,
+   "id": "F2023-총무경제-001",
+   "dept": "예산법무과",
+   "silguk": "기획경제실",
+   "recurring": null
+  },
+  {
+   "year": 2025,
+   "com": "의회운영",
+   "group": "의회사무처",
+   "no": 1,
+   "title": "의정 자료 공개 확대",
+   "body": "의정 활동 자료를 누리집에 더 넓게 공개하기 바람.",
+   "dept_raw": "의회사무처",
+   "uid": 29253,
+   "id": "F2025-의회운영-001",
+   "dept": "의회사무처",
+   "silguk": "기타",
+   "recurring": null
+  },
+  {
+   "year": 2025,
+   "com": "복지환경",
+   "group": "환경국",
+   "no": 1,
+   "title": "재활용 선별장 화재 예방 대책",
+   "body": "재활용 선별장 화재가 잇따르므로 감지 설비와 예방 대책을 마련하기 바람.",
+   "dept_raw": "자원순환과",
+   "uid": 29252,
+   "id": "F2025-복지환경-001",
+   "dept": "자원순환과",
+   "silguk": "환경국",
+   "recurring": "R003"
+  },
+  {
+   "year": 2022,
+   "com": "보사환경",
+   "group": "환경국",
+   "no": 1,
+   "title": "재활용 선별장 작업자 안전 관리",
+   "body": "재활용 선별장 작업자 안전사고가 있었으므로 안전 수칙을 점검하기 바람.",
+   "dept_raw": "자원순환과",
+   "uid": 29221,
+   "id": "F2022-보사환경-001",
+   "dept": "자원순환과",
+   "silguk": "환경국",
+   "recurring": "R003"
+  },
+  {
+   "year": 2023,
+   "com": "도시건설",
+   "group": "환경국",
+   "no": 2,
+   "title": "도시숲 조성 뒤 사후 관리",
+   "body": "조성한 도시숲의 고사목이 많으므로 사후 관리 계획을 세우기 바람.",
+   "dept_raw": "정원도시과",
+   "uid": 29230,
+   "id": "F2023-도시건설-002",
+   "dept": "정원도시과",
+   "silguk": "환경국",
+   "recurring": null
+  },
+  {
+   "year": 2021,
+   "com": "도시건설",
+   "group": "환경국",
+   "no": 2,
+   "title": "가로수 병해충 방제 철저",
+   "body": "가로수 병해충 피해가 되풀이되므로 방제 시기를 앞당기기 바람.",
+   "dept_raw": "녹지과",
+   "uid": 29210,
+   "id": "F2021-도시건설-002",
+   "dept": "정원도시과",
+   "silguk": "환경국",
+   "recurring": null
+  },
+  {
+   "year": 2025,
+   "com": "도시교통",
+   "group": "도시주택국",
+   "no": 1,
+   "title": "공동주택 관리비 지원 사후 점검 강화",
+   "body": "지원금이 목적대로 쓰였는지 사후 점검 체계를 갖추고 결과를 의회에 보고하기 바람.",
+   "dept_raw": "주택과",
+   "uid": 29250,
+   "id": "F2025-도시교통-001",
+   "dept": "주택과",
+   "silguk": "도시주택국",
+   "recurring": "R001"
+  },
+  {
+   "year": 2024,
+   "com": "도시교통",
+   "group": "도시주택국",
+   "no": 1,
+   "title": "노후 임대주택 리모델링 일정 관리",
+   "body": "노후 임대주택 리모델링 공정이 늦어지고 있으므로 입주민 안내와 일정 관리를 철저히 하기 바람.",
+   "dept_raw": "주택과",
+   "uid": 29240,
+   "id": "F2024-도시교통-001",
+   "dept": "주택과",
+   "silguk": "도시주택국",
+   "recurring": null
+  },
+  {
+   "year": 2023,
+   "com": "도시건설",
+   "group": "도시주택국",
+   "no": 1,
+   "title": "공동주택 관리비 지원 대상 선정 기준 재검토",
+   "body": "지원 대상 선정 기준이 2021년 지적 뒤에도 바뀌지 않았으므로 선정 기준을 다시 검토하기 바람.",
+   "dept_raw": "주택과",
+   "uid": 29230,
+   "id": "F2023-도시건설-001",
+   "dept": "주택과",
+   "silguk": "도시주택국",
+   "recurring": "R001"
+  },
+  {
+   "year": 2021,
+   "com": "도시건설",
+   "group": "도시주택국",
+   "no": 1,
+   "title": "공동주택 관리비 지원 기준 정비",
+   "body": "공동주택 관리비 지원 기준이 단지 규모별로 달라 형평성 논란이 있으므로 기준을 정비하기 바람.",
+   "dept_raw": "주택과",
+   "uid": 29210,
+   "id": "F2021-도시건설-001",
+   "dept": "주택과",
+   "silguk": "도시주택국",
+   "recurring": "R001"
+  },
+  {
+   "year": 2025,
+   "com": "기획행정",
+   "group": "부시장 직속",
+   "no": 1,
+   "title": "청년 월세 지원 신청 절차 간소화",
+   "body": "청년 월세 지원 신청 서류가 많아 포기하는 사례가 있으므로 절차를 줄이기 바람.",
+   "dept_raw": "청년정책관",
+   "uid": 29251,
+   "id": "F2025-기획행정-001",
+   "dept": "청년정책관",
+   "silguk": "부시장 직속",
+   "recurring": null
+  },
+  {
+   "year": 2024,
+   "com": "기획행정",
+   "group": "부시장 직속",
+   "no": 1,
+   "title": "청년 창업공간 공실 해소 방안 마련",
+   "body": "청년 창업공간 공실이 길어지고 있으므로 모집 방식을 바꾸는 등 해소 방안을 마련하기 바람.",
+   "dept_raw": "청년정책관",
+   "uid": 29241,
+   "id": "F2024-기획행정-001",
+   "dept": "청년정책관",
+   "silguk": "부시장 직속",
+   "recurring": "R004"
+  },
+  {
+   "year": 2022,
+   "com": "총무경제",
+   "group": "부시장 직속",
+   "no": 1,
+   "title": "청년 창업공간 입주 기업 성과 관리",
+   "body": "청년 창업공간 입주 기업의 매출·고용 성과를 해마다 점검하기 바람.",
+   "dept_raw": "청년정책관",
+   "uid": 29220,
+   "id": "F2022-총무경제-001",
+   "dept": "청년정책관",
+   "silguk": "부시장 직속",
+   "recurring": "R004"
+  },
+  {
+   "year": 2023,
+   "com": "총무경제",
+   "group": "안전행정국",
+   "no": 2,
+   "title": "공용차량 운행 기록 관리",
+   "body": "공용차량 운행 기록이 빠진 날이 있으므로 기록 관리를 철저히 하기 바람.",
+   "dept_raw": "총무과",
+   "uid": 29231,
+   "id": "F2023-총무경제-002",
+   "dept": "총무과",
+   "silguk": "안전행정국",
+   "recurring": null
+  },
+  {
+   "year": 2024,
+   "com": "기획행정",
+   "group": "부시장 직속",
+   "no": 3,
+   "title": "시정 홍보물 효과 분석",
+   "body": "홍보물 제작비에 견주어 효과 분석이 없으므로 매체별 효과를 분석하기 바람.",
+   "dept_raw": "홍보기획관",
+   "uid": 29241,
+   "id": "F2024-기획행정-003",
+   "dept": "홍보기획관",
+   "silguk": "부시장 직속",
+   "recurring": null
+  },
+  {
+   "year": 2023,
+   "com": "보사환경",
+   "group": "환경국",
+   "no": 1,
+   "title": "미세먼지 저감 사업 성과 점검",
+   "body": "미세먼지 저감 사업의 효과를 측정해 사업을 조정하기 바람.",
+   "dept_raw": "환경정책과",
+   "uid": 29232,
+   "id": "F2023-보사환경-001",
+   "dept": "환경정책과",
+   "silguk": "환경국",
+   "recurring": null
+  },
+  {
+   "year": 2022,
+   "com": "총무경제",
+   "group": "기획경제실",
+   "no": 2,
+   "title": "수의계약 특정 업체 집중 방지",
+   "body": "같은 업체와 수의계약이 되풀이되지 않도록 계약 대장을 점검하기 바람.",
+   "dept_raw": "회계과",
+   "uid": 29220,
+   "id": "F2022-총무경제-002",
+   "dept": "회계과",
+   "silguk": "기획경제실",
+   "recurring": null
+  }
+ ],
+ "recurring": [
+  {
+   "id": "R001",
+   "dept": "주택과",
+   "years": [
+    2021,
+    2023,
+    2025
+   ],
+   "finding_ids": [
+    "F2021-도시건설-001",
+    "F2023-도시건설-001",
+    "F2025-도시교통-001"
+   ],
+   "common": [
+    "공동주택",
+    "관리비",
+    "지원"
+   ]
+  },
+  {
+   "id": "R002",
+   "dept": "가람구 건설과",
+   "years": [
+    2023,
+    2025
+   ],
+   "finding_ids": [
+    "F2023-도시건설-003",
+    "F2025-도시교통-002"
+   ],
+   "common": [
+    "굴착",
+    "도로",
+    "복구"
+   ]
+  },
+  {
+   "id": "R003",
+   "dept": "자원순환과",
+   "years": [
+    2022,
+    2025
+   ],
+   "finding_ids": [
+    "F2022-보사환경-001",
+    "F2025-복지환경-001"
+   ],
+   "common": [
+    "선별장",
+    "재활용"
+   ]
+  },
+  {
+   "id": "R004",
+   "dept": "청년정책관",
+   "years": [
+    2022,
+    2024
+   ],
+   "finding_ids": [
+    "F2022-총무경제-001",
+    "F2024-기획행정-001"
+   ],
+   "common": [
+    "창업공간",
+    "청년"
+   ]
+  }
+ ],
+ "promises": [
+  {
+   "id": "P291-01-01-01",
+   "session": 291,
+   "date": "2024-03-12",
+   "topic": "노후 임대주택 리모델링 추진",
+   "question": "노후 임대주택 리모델링 공사가 늦어지는 까닭과 앞으로의 일정은?",
+   "commitments": [
+    "노후 임대주택 리모델링은 올해 안에 설계를 마치고 내년 상반기에 착공할 계획임.",
+    "공사 기간 입주민 임시 거처를 마련하도록 노력하겠음."
+   ],
+   "uid": 10191,
+   "dept": "주택과",
+   "dept_basis": [
+    "노후",
+    "리모델링",
+    "임대주택"
+   ],
+   "dept_guess": true
+  },
+  {
+   "id": "P291-01-02-01",
+   "session": 291,
+   "date": "2024-03-12",
+   "topic": "공동주택 관리비 지원",
+   "question": "공동주택 관리비 지원 대상 선정 기준을 바꿀 생각은?",
+   "commitments": [
+    "공동주택 관리비 지원 기준을 단지 규모와 관계없이 같도록 조례 개정을 검토 예정임."
+   ],
+   "uid": 10191,
+   "dept": "주택과",
+   "dept_basis": [
+    "공동주택",
+    "관리비"
+   ],
+   "dept_guess": true
+  },
+  {
+   "id": "P295-01-01-01",
+   "session": 295,
+   "date": "2025-03-11",
+   "topic": "청년 창업공간 활성화",
+   "question": "청년 창업공간 공실을 줄일 방안은?",
+   "commitments": [
+    "청년 창업공간 모집을 수시 모집으로 바꾸어 공실을 줄이겠음."
+   ],
+   "uid": 10195,
+   "dept": "청년정책관",
+   "dept_basis": [
+    "창업공간",
+    "청년정책"
+   ],
+   "dept_guess": true
+  },
+  {
+   "id": "P295-01-02-01",
+   "session": 295,
+   "date": "2025-03-11",
+   "topic": "재활용 선별장 화재 예방",
+   "question": "재활용 선별장 화재 예방 설비 보강 계획은?",
+   "commitments": [
+    "재활용 선별장에 열화상 감지 설비를 설치할 예정임."
+   ],
+   "uid": 10195,
+   "dept": "자원순환과",
+   "dept_basis": [
+    "선별장",
+    "재활용"
+   ],
+   "dept_guess": true
+  },
+  {
+   "id": "P299-01-01-01",
+   "session": 299,
+   "date": "2026-03-10",
+   "topic": "도시숲 사후 관리",
+   "question": "도시숲 조성 뒤 고사목 관리 대책은?",
+   "commitments": [
+    "도시숲 고사목은 하반기에 모두 교체하고 관리 인력을 늘리도록 노력하겠음."
+   ],
+   "uid": 10199,
+   "dept": "미상",
+   "dept_basis": [],
+   "dept_guess": true
+  },
+  {
+   "id": "P299-01-02-01",
+   "session": 299,
+   "date": "2026-03-10",
+   "topic": "경로당 운영 지원",
+   "question": "경로당 운영비 정산 방식 개선 계획은?",
+   "commitments": [
+    "경로당 운영비 정산을 전자 방식으로 바꿀 계획임."
+   ],
+   "uid": 10199,
+   "dept": "미상",
+   "dept_basis": [],
+   "dept_guess": true
+  },
+  {
+   "id": "P299-01-03-01",
+   "session": 299,
+   "date": "2026-03-10",
+   "topic": "시정 전반",
+   "question": "올해 시정 운영 방향은?",
+   "commitments": [
+    "시민과 소통하며 시정을 운영하겠음."
+   ],
+   "uid": 10199,
+   "dept": "미상",
+   "dept_basis": [],
+   "dept_guess": true
+  }
+ ],
+ "expenditure": {
+  "주택과": [
+   {
+    "year": 2021,
+    "budget": 4700000000,
+    "spent": 4277000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 5122000000,
+    "spent": 4507360000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 5583320000,
+    "spent": 5192488000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 6087719000,
+    "spent": 5235438000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 6639322000,
+    "spent": 5975390000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 7242656000,
+    "spent": 3404048000,
+    "mended": false
+   }
+  ],
+  "청년정책관": [
+   {
+    "year": 2021,
+    "budget": 2300000000,
+    "spent": 2093000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 2544000000,
+    "spent": 2238720000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 2814720000,
+    "spent": 2617690000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 3115162000,
+    "spent": 2679039000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 3448670000,
+    "spent": 3103803000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 3818975000,
+    "spent": 1794918000,
+    "mended": false
+   }
+  ],
+  "예산법무과": [
+   {
+    "year": 2021,
+    "budget": 390000000,
+    "spent": 354900000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 406800000,
+    "spent": 357984000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 424386000,
+    "spent": 394679000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 442797000,
+    "spent": 380806000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 462071000,
+    "spent": 415864000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 482251000,
+    "spent": 226657000,
+    "mended": false
+   }
+  ],
+  "세정과": [
+   {
+    "year": 2021,
+    "budget": 250000000,
+    "spent": 227500000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 257500000,
+    "spent": 226600000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 265225000,
+    "spent": 246659000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 273182000,
+    "spent": 234937000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 281377000,
+    "spent": 253239000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 289819000,
+    "spent": 136215000,
+    "mended": false
+   }
+  ],
+  "회계과": [
+   {
+    "year": 2021,
+    "budget": 120000000,
+    "spent": 109200000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 122400000,
+    "spent": 107712000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 124848000,
+    "spent": 116109000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 127345000,
+    "spent": 109517000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 129892000,
+    "spent": 116903000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 132490000,
+    "spent": 62270000,
+    "mended": false
+   }
+  ],
+  "총무과": [
+   {
+    "year": 2021,
+    "budget": 400000000,
+    "spent": 364000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 412000000,
+    "spent": 362560000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 424360000,
+    "spent": 394655000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 437091000,
+    "spent": 375898000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 450204000,
+    "spent": 405184000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 463710000,
+    "spent": 217944000,
+    "mended": false
+   }
+  ],
+  "홍보기획관": [
+   {
+    "year": 2021,
+    "budget": 700000000,
+    "spent": 637000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 728000000,
+    "spent": 640640000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 757120000,
+    "spent": 704122000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 787405000,
+    "spent": 677168000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 818901000,
+    "spent": 737011000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 851657000,
+    "spent": 400279000,
+    "mended": false
+   }
+  ],
+  "정원도시과": [
+   {
+    "year": 2021,
+    "budget": 2600000000,
+    "spent": 2366000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 2758000000,
+    "spent": 2427040000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 2926340000,
+    "spent": 2721496000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 3105722000,
+    "spent": 2670921000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 3296897000,
+    "spent": 2967207000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 3500667000,
+    "spent": 1645313000,
+    "mended": false
+   }
+  ],
+  "공원관리과": [
+   {
+    "year": 2021,
+    "budget": 900000000,
+    "spent": 819000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 945000000,
+    "spent": 831600000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 992250000,
+    "spent": 1051785000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 1041863000,
+    "spent": 896002000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 1093956000,
+    "spent": 984560000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 1148653000,
+    "spent": 539867000,
+    "mended": false
+   }
+  ],
+  "자원순환과": [
+   {
+    "year": 2021,
+    "budget": 4000000000,
+    "spent": 3640000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 4160000000,
+    "spent": 3660800000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 4326400000,
+    "spent": 4023552000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 4499456000,
+    "spent": 3869532000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 4679434000,
+    "spent": 4211491000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 4866612000,
+    "spent": 2287308000,
+    "mended": false
+   }
+  ],
+  "환경정책과": [
+   {
+    "year": 2021,
+    "budget": 1100000000,
+    "spent": 1001000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 1166000000,
+    "spent": 1026080000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 1235960000,
+    "spent": 1149443000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 1310118000,
+    "spent": 1126701000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 1388725000,
+    "spent": 1249852000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 1472048000,
+    "spent": 691863000,
+    "mended": false
+   }
+  ],
+  "노인복지과": [
+   {
+    "year": 2021,
+    "budget": 14000000000,
+    "spent": 12740000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 14880000000,
+    "spent": 13094400000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 15816600000,
+    "spent": 14709438000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 16813512000,
+    "spent": 14459621000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 17874695000,
+    "spent": 16087226000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 19004374000,
+    "spent": 8932056000,
+    "mended": false
+   }
+  ],
+  "복지정책과": [
+   {
+    "year": 2021,
+    "budget": 2500000000,
+    "spent": 2275000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 2600000000,
+    "spent": 2288000000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 2704000000,
+    "spent": 2514720000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 2812160000,
+    "spent": 2418458000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 2924646000,
+    "spent": 2632181000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 3041632000,
+    "spent": 1429567000,
+    "mended": false
+   }
+  ],
+  "문화관광과": [
+   {
+    "year": 2021,
+    "budget": 1300000000,
+    "spent": 1183000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 1339000000,
+    "spent": 1178320000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 1379170000,
+    "spent": 1282628000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 1420545000,
+    "spent": 1221669000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 1463161000,
+    "spent": 1316845000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 1507056000,
+    "spent": 708316000,
+    "mended": false
+   }
+  ],
+  "가람구 건설과": [
+   {
+    "year": 2021,
+    "budget": 1700000000,
+    "spent": 1547000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 1768000000,
+    "spent": 1555840000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 1838720000,
+    "spent": 1710010000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 1912269000,
+    "spent": 1644551000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 1988760000,
+    "spent": 1789884000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 2068310000,
+    "spent": 972106000,
+    "mended": false
+   }
+  ],
+  "나래구 복지문화과": [
+   {
+    "year": 2021,
+    "budget": 450000000,
+    "spent": 409500000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 472500000,
+    "spent": 415800000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 496125000,
+    "spent": 461396000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 520931000,
+    "spent": 448001000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 546978000,
+    "spent": 492280000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 574327000,
+    "spent": 269934000,
+    "mended": false
+   }
+  ],
+  "도로과": [
+   {
+    "year": 2021,
+    "budget": 6000000000,
+    "spent": 5460000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 6300000000,
+    "spent": 5544000000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 6615000000,
+    "spent": 6151950000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 6945750000,
+    "spent": 5973345000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 7293038000,
+    "spent": 6563734000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 7657689000,
+    "spent": 3599114000,
+    "mended": false
+   }
+  ],
+  "의회사무처": [
+   {
+    "year": 2021,
+    "budget": 2400000000,
+    "spent": 2184000000,
+    "mended": false
+   },
+   {
+    "year": 2022,
+    "budget": 2472000000,
+    "spent": 2175360000,
+    "mended": false
+   },
+   {
+    "year": 2023,
+    "budget": 2546160000,
+    "spent": 2367929000,
+    "mended": false
+   },
+   {
+    "year": 2024,
+    "budget": 2622545000,
+    "spent": 2255389000,
+    "mended": false
+   },
+   {
+    "year": 2025,
+    "budget": 2701221000,
+    "spent": 2431099000,
+    "mended": false
+   },
+   {
+    "year": 2026,
+    "budget": 2782258000,
+    "spent": 1307661000,
+    "mended": false
+   }
+  ]
+ },
+ "depts": [
+  {
+   "name": "가나1동",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가나2동",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가나도시공사",
+   "silguk": "출자출연기관",
+   "aliases": [
+    "도시공사"
+   ],
+   "current": true
+  },
+  {
+   "name": "가람구",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가람구 건설과",
+   "silguk": "가람구",
+   "aliases": [
+    "건설과"
+   ],
+   "current": true
+  },
+  {
+   "name": "가람구 건축과",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가람구 동행정복지센터",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가람구 민원봉사과",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가람구 복지문화과",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가람구 세무과",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가람구 행정지원과",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가람구도서관",
+   "silguk": "평생학습원",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가람구보건소",
+   "silguk": "가람구보건소",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가람구보건소 건강증진과",
+   "silguk": "가람구보건소",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "가람구보건소 보건정책과",
+   "silguk": "가람구보건소",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "감사관",
+   "silguk": "부시장 직속",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "건축과",
+   "silguk": "도시주택국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "공원관리과",
+   "silguk": "환경국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "기업경제과",
+   "silguk": "기획경제실",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "기후대기에너지과",
+   "silguk": "환경국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "나래구",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "나래구 건설과",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "나래구 건축과",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "나래구 동행정복지센터",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "나래구 민원봉사과",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "나래구 복지문화과",
+   "silguk": "나래구",
+   "aliases": [
+    "복지문화과"
+   ],
+   "current": true
+  },
+  {
+   "name": "나래구 세무과",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "나래구 행정지원과",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "나래구도서관",
+   "silguk": "평생학습원",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "나래구보건소",
+   "silguk": "나래구보건소",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "나래구보건소 건강증진과",
+   "silguk": "나래구보건소",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "나래구보건소 보건정책과",
+   "silguk": "나래구보건소",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "노인복지과",
+   "silguk": "복지문화국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "농수산물도매시장관리사업소",
+   "silguk": "사업소",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "다온동",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "대중교통과",
+   "silguk": "도로교통국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "도로과",
+   "silguk": "도로교통국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "도시계획과",
+   "silguk": "도시주택국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "도시혁신과",
+   "silguk": "도시주택국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "마루동",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "문화관광과",
+   "silguk": "복지문화국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "복지정책과",
+   "silguk": "복지문화국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "상하수도사업소",
+   "silguk": "사업소",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "새솔동",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "세정과",
+   "silguk": "기획경제실",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "수도행정과",
+   "silguk": "상하수도사업소",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "아름동",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "안전정책과",
+   "silguk": "안전행정국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "여성가족과",
+   "silguk": "복지문화국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "예산법무과",
+   "silguk": "기획경제실",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "은별동",
+   "silguk": "가람구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "은하수동",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "의회사무처",
+   "silguk": "기타",
+   "aliases": [],
+   "current": false
+  },
+  {
+   "name": "자원순환과",
+   "silguk": "환경국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "자치행정과",
+   "silguk": "안전행정국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "정원도시과",
+   "silguk": "환경국",
+   "aliases": [
+    "녹지과"
+   ],
+   "current": true
+  },
+  {
+   "name": "정책기획과",
+   "silguk": "기획경제실",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "주택과",
+   "silguk": "도시주택국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "청년정책관",
+   "silguk": "부시장 직속",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "체육과",
+   "silguk": "안전행정국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "초롱동",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "총무과",
+   "silguk": "안전행정국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "평생학습과",
+   "silguk": "평생학습원",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "평생학습원",
+   "silguk": "사업소",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "하람1동",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "하람2동",
+   "silguk": "나래구",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "하수과",
+   "silguk": "상하수도사업소",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "홍보기획관",
+   "silguk": "부시장 직속",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "환경정책과",
+   "silguk": "환경국",
+   "aliases": [],
+   "current": true
+  },
+  {
+   "name": "회계과",
+   "silguk": "기획경제실",
+   "aliases": [],
+   "current": true
+  }
+ ],
+ "gu": [
+  "가람",
+  "나래"
+ ],
+ "dong": {
+  "가람": [
+   "가나",
+   "새솔",
+   "은별",
+   "다온"
+  ],
+  "나래": [
+   "하람",
+   "마루",
+   "은하수",
+   "아름",
+   "초롱"
+  ]
+ },
+ "unplaced": 0,
+ "committees": [
+  {
+   "name": "의회운영위원회",
+   "depts": [
+    "의회사무처"
+   ]
+  },
+  {
+   "name": "기획행정위원회",
+   "depts": [
+    "가나도시공사",
+    "가람구 민원봉사과",
+    "감사관",
+    "기업경제과",
+    "나래구 민원봉사과",
+    "농수산물도매시장관리사업소",
+    "세정과",
+    "안전정책과",
+    "예산법무과",
+    "자치행정과",
+    "정책기획과",
+    "청년정책관",
+    "체육과",
+    "총무과",
+    "홍보기획관",
+    "회계과"
+   ]
+  },
+  {
+   "name": "복지환경위원회",
+   "depts": [
+    "가람구도서관",
+    "가람구보건소",
+    "가람구보건소 건강증진과",
+    "가람구보건소 보건정책과",
+    "기후대기에너지과",
+    "나래구 복지문화과",
+    "나래구도서관",
+    "나래구보건소",
+    "나래구보건소 건강증진과",
+    "나래구보건소 보건정책과",
+    "노인복지과",
+    "문화관광과",
+    "복지정책과",
+    "여성가족과",
+    "자원순환과",
+    "평생학습과",
+    "평생학습원",
+    "환경정책과"
+   ]
+  },
+  {
+   "name": "도시교통위원회",
+   "depts": [
+    "가나도시공사",
+    "가람구 건설과",
+    "가람구 민원봉사과",
+    "건축과",
+    "공원관리과",
+    "나래구 민원봉사과",
+    "대중교통과",
+    "도로과",
+    "도시계획과",
+    "도시혁신과",
+    "상하수도사업소",
+    "수도행정과",
+    "정원도시과",
+    "주택과",
+    "하수과"
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "name": "구청·동 행정복지센터",
+   "depts": [
+    "가나1동",
+    "가나2동",
+    "가람구",
+    "가람구 동행정복지센터",
+    "나래구",
+    "나래구 동행정복지센터",
+    "다온동",
+    "마루동",
+    "새솔동",
+    "아름동",
+    "은별동",
+    "은하수동",
+    "초롱동",
+    "하람1동",
+    "하람2동"
+   ]
+  }
+ ],
+ "unassigned": [
+  "가람구 건축과",
+  "가람구 복지문화과",
+  "가람구 세무과",
+  "가람구 행정지원과",
+  "나래구 건설과",
+  "나래구 건축과",
+  "나래구 세무과",
+  "나래구 행정지원과"
+ ],
+ "council": {
+  "exec_low": 60,
+  "exec_high": 100,
+  "dong_group": "구청·동 행정복지센터",
+  "overrides": {
+   "가람구 민원봉사과": [
+    "기획행정위원회",
+    "도시교통위원회"
+   ],
+   "나래구 민원봉사과": [
+    "기획행정위원회",
+    "도시교통위원회"
+   ]
+  },
+  "weather": [
+   {
+    "max": 0,
+    "icon": "맑음"
+   },
+   {
+    "max": 4,
+    "icon": "구름 조금"
+   },
+   {
+    "max": 9,
+    "icon": "흐림"
+   },
+   {
+    "icon": "비"
+   }
+  ]
+ },
+ "_설명": "합성 견본 자료입니다. 가상 지자체 「가나시」의 지어낸 지적·약속·세출이며 실제 기관·사람과 관계없습니다. 다시 만들기: python tools/make_sample.py"
+}

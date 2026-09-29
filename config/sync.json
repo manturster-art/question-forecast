@@ -1,0 +1,6 @@
+{
+  "auto_deploy": false,
+  "expenditure_every_days": 30,
+  "log": "work/sync.log",
+  "wrangler": "deploy/node_modules/.bin/wrangler"
+}
